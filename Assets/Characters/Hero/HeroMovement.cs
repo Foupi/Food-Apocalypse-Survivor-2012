@@ -21,11 +21,13 @@ public class HeroMovement : MonoBehaviour
 
     private Vector3 GetDirection()
     {
-        return Vector3.up; //FIXME
+        return new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
     }
 
     private void Move(Vector3 Direction)
     {
-        RB.velocity = Direction.normalized * speed;
+        if (Direction.sqrMagnitude > 1)
+            Direction = Direction.normalized;
+        RB.velocity = Direction * speed;
     }
 }
