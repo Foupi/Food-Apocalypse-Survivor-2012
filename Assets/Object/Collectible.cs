@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class Collectible : MonoBehaviour
 {
+    public bool destroyOnCollect = true;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.TryGetComponent(out HeroMovement Hero))
         {
             OnCollectEffect(Hero);
-            Destroy(gameObject);
+            if (destroyOnCollect)
+                Destroy(gameObject);
         }
     }
 

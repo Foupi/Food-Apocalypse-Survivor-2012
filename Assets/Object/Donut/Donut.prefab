@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa670e39d258b3048949375811f44767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: 
+  destroyOnCollect: 1
 --- !u!70 &7253496578403950545
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

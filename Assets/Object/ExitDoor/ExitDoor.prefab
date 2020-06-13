@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 3629758779458904541}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.22, y: 2.66, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -69,9 +69,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 775395817
+  m_SortingLayer: 2
+  m_SortingOrder: 2
   m_Sprite: {fileID: -6792882168476231183, guid: 97cb492371aa2494cb9d6e77372c841a,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2085bbc8005a464ab4ffef0f7aa87f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyOnCollect: 0
   SceneName: Winning
   ActivatedSprite: {fileID: -2527812120965174261, guid: 97cb492371aa2494cb9d6e77372c841a,
     type: 3}
@@ -112,16 +113,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.33035716}
+  m_Offset: {x: 0.060000002, y: 1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28735632}
-    oldSize: {x: 1, y: 1.5535715}
+    pivot: {x: 0.44642857, y: 0.16666667}
+    oldSize: {x: 1.12, y: 3}
     newSize: {x: 1, y: 1.5535715}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.5535715}
+  m_Size: {x: 1.12, y: 3}
   m_EdgeRadius: 0

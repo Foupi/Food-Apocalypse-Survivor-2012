@@ -41,11 +41,29 @@ Tilemap:
   m_GameObject: {fileID: 8431622016048848795}
   m_Enabled: 1
   m_Tiles:
+  - first: {x: -1, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
   - first: {x: 0, y: 0, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
       m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: -1, y: 1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -65,14 +83,24 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 3cc405ca7ae5c5e44b00f01d941c4f5e, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 6d7f04f2dbe00ce48ac722c330800f94, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 5da6ae32f0a8b694aaced7aa523dec0f, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 6fdd522a0e422ba4a81f993119483280, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: -8841490917199087839, guid: b840e1a6b26cb144380f7b5886bf4d80,
       type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 70885313432537070, guid: b840e1a6b26cb144380f7b5886bf4d80, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 2868539044483428322, guid: def6e22ecae9963449e3b25271e23f8f,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -5107677499478342438, guid: def6e22ecae9963449e3b25271e23f8f,
+      type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 2
+  - m_RefCount: 4
     m_Data:
       e00: 1
       e01: 0
@@ -91,13 +119,13 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 2
+  - m_RefCount: 4
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: 0, y: 0, z: 0}
-  m_Size: {x: 1, y: 2, z: 1}
+  m_Origin: {x: -1, y: -1, z: 0}
+  m_Size: {x: 2, y: 3, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -220,4 +248,4 @@ MonoBehaviour:
   m_Script: {fileID: 12395, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: Palette Settings
   m_EditorClassIdentifier: 
-  cellSizing: 0
+  cellSizing: 100
