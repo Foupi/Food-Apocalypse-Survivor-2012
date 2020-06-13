@@ -8,7 +8,6 @@ public class Graber : MonoBehaviour
 
     private Chair ChairToGrab = null;
     private Chair ChairGrabbed = null;
-    private bool Pressing;
 
     // Start is called before the first frame update
     void Start()
@@ -19,24 +18,20 @@ public class Graber : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetAxis("Grab") > 0 && !Pressing)
+        if (Input.GetAxis("Grab") > 0)
         {
-            if (ChairGrabbed == null)
+            if (ChairToGrab != null)
             {
-                if (ChairToGrab != null)
-                {
-                    ChairToGrab.transform.parent = transform;
-                    ChairGrabbed = ChairToGrab;
-                }
-            }
-            else
-            {
-                ChairGrabbed.transform.parent = null;
-                ChairGrabbed = null;
+                ChairToGrab.transform.parent = transform;
+                ChairGrabbed = ChairToGrab;
             }
         }
+        else if (ChairGrabbed != null)
+        {
 
-        Pressing = (Input.GetAxis("Grab") > 0);
+            ChairGrabbed.transform.parent = null;
+            ChairGrabbed = null;
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)

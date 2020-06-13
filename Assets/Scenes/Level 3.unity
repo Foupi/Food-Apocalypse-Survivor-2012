@@ -8553,7 +8553,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You can grab certain objects by pressing E. Use that to your advantage
+  m_Text: You can grab certain objects by holding [E]. Use that to your advantage
     !
 --- !u!222 &1193857693
 CanvasRenderer:

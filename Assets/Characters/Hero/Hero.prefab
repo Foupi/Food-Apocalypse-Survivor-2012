@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
-  GrabSpeed: 2
+  GrabSpeed: 3
   DeadSprite: {fileID: 9138555137054584332, guid: c5c135d3679334046bc3bc55bc95f8ab,
     type: 3}
 --- !u!1 &8668210229547995136

@@ -6554,12 +6554,12 @@ PrefabInstance:
     - target: {fileID: 1369163500065298610, guid: 4f5466ca84b98bf4db16da0dd358dd24,
         type: 3}
       propertyPath: MaxFood
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1369163500065298610, guid: 4f5466ca84b98bf4db16da0dd358dd24,
         type: 3}
       propertyPath: NumberFoodStart
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1369163500065298610, guid: 4f5466ca84b98bf4db16da0dd358dd24,
         type: 3}
