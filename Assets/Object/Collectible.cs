@@ -9,8 +9,8 @@ public class Collectible : MonoBehaviour
         if(collision.TryGetComponent(out HeroMovement Hero))
         {
             OnCollectEffect(Hero);
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
     }
 
     protected virtual void OnCollectEffect(HeroMovement Hero) { }
