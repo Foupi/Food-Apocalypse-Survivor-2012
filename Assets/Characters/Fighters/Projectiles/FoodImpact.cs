@@ -34,13 +34,13 @@ public class FoodImpact : MonoBehaviour
     {
         if (other.TryGetComponent(out HeroMovement hero))
         {
-            disappear();
+            Debug.Log("Attack PLayer !");
         }
         if (other.TryGetComponent(out FighterBehaviour fighter))
         {
-            disappear();
+            Debug.Log("Attack fighter !");
         }
-
+        disappear();
     }
 
     // Time to die, little piece of whatever food you are... 
