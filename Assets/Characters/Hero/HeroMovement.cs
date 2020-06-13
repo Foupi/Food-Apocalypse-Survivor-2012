@@ -7,12 +7,29 @@ public class HeroMovement : MonoBehaviour
     private Rigidbody2D RB;
     public float speed;
 
+    public Sprite DeadSprite;
+
     private bool deactivate = false;
 
     public void Deactivate()
     {
         deactivate = true;
         RB.velocity = Vector3.zero;
+    }
+
+    public void Kill()
+    {
+        StartCoroutine(KillCoroutine());
+    }
+
+    IEnumerator KillCoroutine()
+    {
+        Deactivate();
+        GetComponent<SpriteRenderer>().sprite = DeadSprite;
+
+        yield return new WaitForSeconds(1);
+
+        GameManager.Instance.ResetScene();
     }
 
     // Start is called before the first frame update

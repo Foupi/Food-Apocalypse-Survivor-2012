@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public MaskTransition Transition;
 
     private HeroMovement Hero;
+    //Currently changing scene
+    private bool transitionning = false;
 
     private void Awake()
     {
@@ -24,9 +26,17 @@ public class GameManager : MonoBehaviour
 
     public void ResetScene()
     {
+        ChangeScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void ChangeScene(string scene)
+    {
+        if (transitionning)
+            return;
+        transitionning = true;
         Instantiate(BlackScreen);
         Vector3 pos = Camera.main.transform.position;
-        Instantiate(Transition, new Vector3(pos.x, pos.y), Quaternion.identity).Init(SceneManager.GetActiveScene().name);
+        Instantiate(Transition, new Vector3(pos.x, pos.y), Quaternion.identity).Init(scene);
         Hero.Deactivate();
     }
 }

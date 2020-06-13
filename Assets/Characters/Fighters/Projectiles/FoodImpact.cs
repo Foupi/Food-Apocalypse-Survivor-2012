@@ -34,7 +34,7 @@ public class FoodImpact : MonoBehaviour
     {
         if (other.TryGetComponent(out HeroMovement hero))
         {
-            Debug.Log("Attack PLayer !");
+            hero.Kill();
         }
         if (other.TryGetComponent(out FighterBehaviour fighter))
         {

@@ -20,6 +20,6 @@ public class ExitDoor : Collectible
     protected override void OnCollectEffect(HeroMovement Hero)
     {
         if (activated)
-            GameManager.Instance.ResetScene();
+            GameManager.Instance.ChangeScene("Winning");
     }
 }
