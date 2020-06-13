@@ -14,6 +14,14 @@ public class SupplyFood : MonoBehaviour
         SpriteRenderer.sprite = Sprites[Random.Range(0, Sprites.Length)];
     }
 
+    public void PutOnPlate(Vector3 PlatePos, SupplyTable table)
+    {
+        transform.position = PlatePos;
+        transform.parent = table.transform;
+        SpriteRenderer.sortingOrder = (int) -transform.position.y * 100;
+
+    }
+
     public void Grab(Transform transform)
     {
         this.transform.parent = transform;

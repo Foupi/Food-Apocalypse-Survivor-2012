@@ -229,7 +229,7 @@ MonoBehaviour:
     type: 3}
   NumberFoodStart: 3
   MaxFood: 5
-  sizeFoodFloor: 0
+  sizeFoodFloor: 0.2
 --- !u!1 &7403039178771059206
 GameObject:
   m_ObjectHideFlags: 0

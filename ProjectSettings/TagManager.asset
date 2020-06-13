@@ -47,6 +47,9 @@ TagManager:
   - name: Object
     uniqueID: 775395817
     locked: 0
+  - name: SupplyFood
+    uniqueID: 1120084189
+    locked: 0
   - name: Screen
     uniqueID: 3822020391
     locked: 0
