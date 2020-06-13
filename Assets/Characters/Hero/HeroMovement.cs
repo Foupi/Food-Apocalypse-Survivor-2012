@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HeroMovement : MonoBehaviour
+public class HeroMovement : Character
 {
-    private Rigidbody2D RB;
-    public float speed;
     public float GrabSpeed;
 
     public Sprite DeadSprite;
 
+    private float normalSpeed;
     private Graber graber;
     private bool deactivate = false;
 
@@ -35,10 +34,11 @@ public class HeroMovement : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
-        RB = GetComponent<Rigidbody2D>();
+        base.Start();
         graber = GetComponentInChildren<Graber>();
+        normalSpeed = speed;
     }
 
     // Update is called once per frame
@@ -47,21 +47,13 @@ public class HeroMovement : MonoBehaviour
         if (deactivate)
             return;
 
+        speed = (graber.IsGrabbing()) ? GrabSpeed : normalSpeed;
+
         Move(GetDirection());
     }
 
     private Vector3 GetDirection()
     {
         return new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-    }
-
-    private void Move(Vector3 Direction)
-    {
-        if (Direction.sqrMagnitude > 1)
-            Direction = Direction.normalized;
-
-        float finalSpeed = (graber.IsGrabbing()) ? GrabSpeed : speed; 
-
-        RB.velocity = Direction * finalSpeed;
     }
 }

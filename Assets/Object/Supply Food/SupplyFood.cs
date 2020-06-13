@@ -18,6 +18,7 @@ public class SupplyFood : MonoBehaviour
     {
         transform.position = PlatePos;
         transform.parent = table.transform;
+        SpriteRenderer.enabled = true;
         SpriteRenderer.sortingOrder = (int) -transform.position.y * 100;
 
     }

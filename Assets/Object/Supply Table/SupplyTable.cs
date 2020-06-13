@@ -35,6 +35,15 @@ public class SupplyTable : MonoBehaviour
         return food;
     }
 
+    public bool Drop(SupplyFood food)
+    {
+        if (supplies.Count >= MaxFood)
+            return false;
+        supplies.Add(food);
+        food.PutOnPlate(FindPlate(), this);
+        return true;
+    }
+
     protected void CreateFood()
     {
         if (supplies.Count >= MaxFood)

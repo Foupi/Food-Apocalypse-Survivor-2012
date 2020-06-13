@@ -131,7 +131,7 @@ PrefabInstance:
     - target: {fileID: 1369163500065298610, guid: 4f5466ca84b98bf4db16da0dd358dd24,
         type: 3}
       propertyPath: MaxFood
-      value: 5
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1369163500065298610, guid: 4f5466ca84b98bf4db16da0dd358dd24,
         type: 3}
@@ -5984,6 +5984,11 @@ PrefabInstance:
       propertyPath: supply
       value: 
       objectReference: {fileID: 1898206277}
+    - target: {fileID: 3692519287520900998, guid: 8190fbd205a16e34999186dfd65d0b63,
+        type: 3}
+      propertyPath: CoolDown
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3692519287520901017, guid: 8190fbd205a16e34999186dfd65d0b63,
         type: 3}
       propertyPath: m_Name
@@ -6153,6 +6158,11 @@ PrefabInstance:
       propertyPath: supply
       value: 
       objectReference: {fileID: 1898206277}
+    - target: {fileID: 3692519287520900998, guid: 8190fbd205a16e34999186dfd65d0b63,
+        type: 3}
+      propertyPath: CoolDown
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3692519287520901017, guid: 8190fbd205a16e34999186dfd65d0b63,
         type: 3}
       propertyPath: m_Name
@@ -6376,8 +6386,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -165.6, y: 0.000005722}
-  m_SizeDelta: {x: 189.44577, y: 74.53735}
+  m_AnchoredPosition: {x: -159.9, y: -6.7}
+  m_SizeDelta: {x: 120.70349, y: 74.53735}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1443446488
 MonoBehaviour:
@@ -6488,6 +6498,11 @@ PrefabInstance:
       propertyPath: supply
       value: 
       objectReference: {fileID: 1898206277}
+    - target: {fileID: 3692519287520900998, guid: 8190fbd205a16e34999186dfd65d0b63,
+        type: 3}
+      propertyPath: CoolDown
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3692519287520901017, guid: 8190fbd205a16e34999186dfd65d0b63,
         type: 3}
       propertyPath: m_Name
@@ -6784,10 +6799,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Food is running out !
-
-    From now on, every student will need amunitions
-    to fire !'
+  m_Text: Students are organizing a supply chain !
 --- !u!222 &1759103575
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6808,6 +6820,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6c6293128d847c4aadf021d53ff69b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &971128852454175559
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 971128851293061857, guid: a9231d628abd624418981ec9512a6e47,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 971128851293061857, guid: a9231d628abd624418981ec9512a6e47,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 971128851293061857, guid: a9231d628abd624418981ec9512a6e47,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 971128851293061857, guid: a9231d628abd624418981ec9512a6e47,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 971128851293061857, guid: a9231d628abd624418981ec9512a6e47,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 971128851293061857, guid: a9231d628abd624418981ec9512a6e47,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 971128851293061857, guid: a9231d628abd624418981ec9512a6e47,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 971128851293061857, guid: a9231d628abd624418981ec9512a6e47,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 971128851293061857, guid: a9231d628abd624418981ec9512a6e47,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 971128851293061857, guid: a9231d628abd624418981ec9512a6e47,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 971128851293061857, guid: a9231d628abd624418981ec9512a6e47,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 971128851293061859, guid: a9231d628abd624418981ec9512a6e47,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Supplier
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a9231d628abd624418981ec9512a6e47, type: 3}
 --- !u!1001 &8163520943114226042
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6815,6 +6896,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2525670948586526056, guid: 9534d649e19acc340bc4c266cee60ca0,
+        type: 3}
+      propertyPath: CookingCD
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 4290775884961399664, guid: 9534d649e19acc340bc4c266cee60ca0,
         type: 3}
       propertyPath: m_Name

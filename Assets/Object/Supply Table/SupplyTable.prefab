@@ -131,6 +131,8 @@ GameObject:
   - component: {fileID: 6349142446851583149}
   - component: {fileID: 4652524951550670007}
   - component: {fileID: 1369163500065298610}
+  - component: {fileID: 2173293197863538530}
+  - component: {fileID: 5937413921412298259}
   m_Layer: 0
   m_Name: SupplyTable
   m_TagString: Untagged
@@ -230,6 +232,38 @@ MonoBehaviour:
   NumberFoodStart: 3
   MaxFood: 5
   sizeFoodFloor: 0.2
+--- !u!70 &2173293197863538530
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7301811910879164369}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.018700838, y: -0.056118906}
+  m_Size: {x: 0.6098895, y: 1.1583446}
+  m_Direction: 0
+--- !u!70 &5937413921412298259
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7301811910879164369}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.26946968}
+  m_Size: {x: 1.6489393, y: 0.5}
+  m_Direction: 1
 --- !u!1 &7403039178771059206
 GameObject:
   m_ObjectHideFlags: 0
