@@ -1,13 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Donut : Collectible
 {
-    public string SceneName;
+    private ExitDoor ExitDoor;
+    private void Start()
+    {
+        ExitDoor = FindObjectOfType<ExitDoor>();
+    }
     protected override void OnCollectEffect(HeroMovement Hero)
     {
-        SceneManager.LoadScene(SceneName);
+        ExitDoor.Activate();
     }
 }

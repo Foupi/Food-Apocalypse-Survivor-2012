@@ -10,6 +10,7 @@ public class Collectible : MonoBehaviour
         {
             OnCollectEffect(Hero);
         }
+        Destroy(gameObject);
     }
 
     protected virtual void OnCollectEffect(HeroMovement Hero) { }
