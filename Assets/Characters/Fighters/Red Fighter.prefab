@@ -145,3 +145,4 @@ MonoBehaviour:
   target: {fileID: 3692519286660437756}
   food: {fileID: 6665801012483656312, guid: c135dc5a3799d124a91f1399f1091371, type: 3}
   Speed: 5
+  CoolDown: 1
