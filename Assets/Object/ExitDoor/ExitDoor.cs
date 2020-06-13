@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class ExitDoor : Collectible
@@ -21,6 +20,6 @@ public class ExitDoor : Collectible
     protected override void OnCollectEffect(HeroMovement Hero)
     {
         if (activated)
-            SceneManager.LoadScene(SceneName);
+            GameManager.Instance.ResetScene();
     }
 }
