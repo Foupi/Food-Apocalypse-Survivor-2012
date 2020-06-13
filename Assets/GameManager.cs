@@ -37,6 +37,12 @@ public class GameManager : MonoBehaviour
         Instantiate(BlackScreen);
         Vector3 pos = Camera.main.transform.position;
         Instantiate(Transition, new Vector3(pos.x, pos.y), Quaternion.identity).Init(scene);
-        Hero.Deactivate();
+        if (Hero != null)
+            Hero.Deactivate();
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }
