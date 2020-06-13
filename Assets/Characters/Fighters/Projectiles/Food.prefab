@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1572749015329158992}
   - component: {fileID: 6498655349203523948}
-  - component: {fileID: 6888970284795168237}
   - component: {fileID: 2386866967186987818}
   - component: {fileID: -2256927042850632179}
+  - component: {fileID: 7795137261770255062}
   m_Layer: 0
   m_Name: Food
   m_TagString: Untagged
@@ -73,33 +73,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f2bfe5584139aec4792b59fccaec573d, type: 3}
+  m_Sprite: {fileID: 3046544090647025007, guid: 5d47382dfe40c5949b5e47536d7fb411,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5, y: 0.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &6888970284795168237
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6665801012483656312}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.2
 --- !u!50 &2386866967186987818
 Rigidbody2D:
   serializedVersion: 4
@@ -120,7 +105,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &-2256927042850632179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,3 +119,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Range: 25
+  Sprites:
+  - {fileID: -1045181238759104467, guid: 5d47382dfe40c5949b5e47536d7fb411, type: 3}
+  - {fileID: 3046544090647025007, guid: 5d47382dfe40c5949b5e47536d7fb411, type: 3}
+  - {fileID: -314262122811554439, guid: 5d47382dfe40c5949b5e47536d7fb411, type: 3}
+--- !u!70 &7795137261770255062
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6665801012483656312}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.000000005842022, y: -0.04900644}
+  m_Size: {x: 0.50000006, y: 0.40198898}
+  m_Direction: 1

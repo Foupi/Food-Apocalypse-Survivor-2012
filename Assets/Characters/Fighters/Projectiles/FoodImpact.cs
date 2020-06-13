@@ -7,6 +7,7 @@ public class FoodImpact : MonoBehaviour
 {
     // Max duration a food projectile can reach before disappearing
     public float Range;
+    public Sprite[] Sprites;
 
     // Point from which the food projectile was thrown
     private Vector3 startPosition;
@@ -14,6 +15,7 @@ public class FoodImpact : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GetComponent<SpriteRenderer>().sprite = Sprites[UnityEngine.Random.Range(0, Sprites.Length)];
         startPosition = transform.position;
     }
 
