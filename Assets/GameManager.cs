@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public MaskTransition Transition;
 
     private HeroMovement Hero;
+
     //Currently changing scene
     private bool transitionning = false;
 
