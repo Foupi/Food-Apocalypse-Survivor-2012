@@ -143,6 +143,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 3692519286660437756}
-  food: {fileID: 6665801012483656312, guid: c135dc5a3799d124a91f1399f1091371, type: 3}
+  food: {fileID: -2256927042850632179, guid: c135dc5a3799d124a91f1399f1091371, type: 3}
   Speed: 5
+  RequireFoodToShoot: 0
+  supply: {fileID: 0}
   CoolDown: 1

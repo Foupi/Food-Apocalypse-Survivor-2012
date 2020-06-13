@@ -4,17 +4,24 @@ using UnityEngine;
 
 public class SupplyFood : MonoBehaviour
 {
-    private SpriteRenderer SpriteRenderer;
+    public Sprite[] Sprites;
+    public SpriteRenderer SpriteRenderer { get; private set; }
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         SpriteRenderer = GetComponent<SpriteRenderer>();
+        SpriteRenderer.sprite = Sprites[Random.Range(0, Sprites.Length)];
     }
 
     public void Grab(Transform transform)
     {
         this.transform.parent = transform;
         SpriteRenderer.enabled = false;
+    }
+
+    public void Consume()
+    {
+        Destroy(gameObject);
     }
 }

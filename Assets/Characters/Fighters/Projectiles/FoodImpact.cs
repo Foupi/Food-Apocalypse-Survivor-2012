@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,9 +12,13 @@ public class FoodImpact : MonoBehaviour
     private Vector3 startPosition;
 
     // Start is called before the first frame update
-    void Start()
+    public void Init(SupplyFood Supply)
     {
-        GetComponent<SpriteRenderer>().sprite = Sprites[UnityEngine.Random.Range(0, Sprites.Length)];
+        SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+        if (Supply != null)
+            renderer.sprite = Supply.SpriteRenderer.sprite;
+        else
+            renderer.sprite = Sprites[Random.Range(0, Sprites.Length)];
         startPosition = transform.position;
     }
 

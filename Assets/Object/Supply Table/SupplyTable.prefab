@@ -228,7 +228,8 @@ MonoBehaviour:
   FoodPrefab: {fileID: 7237200245956737420, guid: f6733d00fccf84c4380a19005ea6d591,
     type: 3}
   NumberFoodStart: 3
-  MaxFood: 0
+  MaxFood: 5
+  sizeFoodFloor: 0
 --- !u!1 &7403039178771059206
 GameObject:
   m_ObjectHideFlags: 0

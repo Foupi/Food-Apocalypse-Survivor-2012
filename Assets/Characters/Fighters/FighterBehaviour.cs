@@ -8,10 +8,13 @@ public class FighterBehaviour : MonoBehaviour
     public Transform target;
 
     // Projectile
-    public GameObject food;
+    public FoodImpact food;
 
     // Speed
     public float Speed;
+
+    public bool RequireFoodToShoot;
+    public SupplyTable supply;
 
     // Time between two shots
     public float CoolDown;
@@ -48,10 +51,20 @@ public class FighterBehaviour : MonoBehaviour
     // Instanciates the food to be thrown, and throws it.
     private void ThrowFood()
     {
-        GameObject p = Instantiate(food, transform.position, Quaternion.identity);
+        SupplyFood foodSupply = null;
+        if (RequireFoodToShoot)
+        {
+            foodSupply = supply.Take();
+            if (foodSupply == null)
+                return;
+            foodSupply.Consume();
+        }
+        FoodImpact p = Instantiate(food, transform.position, Quaternion.identity);
         Collider2D projectileCollider = p.GetComponent<Collider2D>();
         Physics2D.IgnoreCollision(projectileCollider, fighterCollider);
         Vector3 direction = target.position - p.transform.position;
         p.GetComponent<Rigidbody2D>().velocity = direction.normalized * Speed;
+
+        p.Init(foodSupply);
     }
 }
