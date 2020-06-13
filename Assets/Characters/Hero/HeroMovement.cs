@@ -6,9 +6,11 @@ public class HeroMovement : MonoBehaviour
 {
     private Rigidbody2D RB;
     public float speed;
+    public float GrabSpeed;
 
     public Sprite DeadSprite;
 
+    private Graber graber;
     private bool deactivate = false;
 
     public void Deactivate()
@@ -36,6 +38,7 @@ public class HeroMovement : MonoBehaviour
     void Start()
     {
         RB = GetComponent<Rigidbody2D>();
+        graber = GetComponentInChildren<Graber>();
     }
 
     // Update is called once per frame
@@ -56,6 +59,9 @@ public class HeroMovement : MonoBehaviour
     {
         if (Direction.sqrMagnitude > 1)
             Direction = Direction.normalized;
-        RB.velocity = Direction * speed;
+
+        float finalSpeed = (graber.IsGrabbing()) ? GrabSpeed : speed; 
+
+        RB.velocity = Direction * finalSpeed;
     }
 }

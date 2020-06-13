@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6414499490780349061}
   - component: {fileID: 5211140630608390471}
   - component: {fileID: 7253496578403950545}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Donut
   m_TagString: Untagged
   m_Icon: {fileID: 0}

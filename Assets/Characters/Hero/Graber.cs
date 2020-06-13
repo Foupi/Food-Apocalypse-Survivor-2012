@@ -50,4 +50,9 @@ public class Graber : MonoBehaviour
             if (chair == ChairToGrab)
                 ChairToGrab = null;
     }
+
+    public bool IsGrabbing()
+    {
+        return ChairGrabbed != null;
+    }
 }
