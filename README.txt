@@ -1,1 +1,1 @@
-hEY thIs IS The rEAdmE
+This is an unfinished prototype of a game, initially made for a game jam. You can play a few levels in the game, and there are a few others level hidden in the code, not implemented in the "full" game.
